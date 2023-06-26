@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/styles.css" rel="stylesheet" />
+    <title>Hamza Azam</title>
+    <script>
+      function toggleNav() {
+        if (document.getElementById('SideBar').style.display == 'none') {
+          document.getElementById('SideBar').style.display = 'block';
+          document.getElementById('SideBarOverLay').style.display = 'block';
+          document.getElementById('body').style.overflow = 'hidden';
+        } else {
+          document.getElementById('SideBar').style.display = 'none';
+          document.getElementById('SideBarOverLay').style.display = 'none';
+          document.getElementById('body').style.overflow = 'auto';
+        }
+      }
+    </script>
+  </head>
+  <body id="body">
+    <div class="bg-[#1E1E28]">
+      <!-- Mobile Top Bar  Section Start-->
+      <div
+        class="fixed top-0 z-20 flex h-11 w-full items-center justify-center bg-[#1E1E28] lg:hidden"
+      >
+        <button onClick="toggleNav()" class="absolute left-1">
+          <img src="./public/assets/hero-section/menu.svg" alt="" />
+        </button>
+        <p class="mt-1 text-center text-lg font-semibold text-white">Muhammad Hamza</p>
+      </div>
+      <!-- Mobile Top Bar Section End-->
+
+      <!-- Side Bar Section Start-->
+      <div>
+        <div
+          id="SideBarOverLay"
+          style="display: none"
+          class="fixed z-30 h-full w-full bg-black opacity-60 lg:hidden"
+        ></div>
+        <div
+          id="SideBar"
+          style="display: none"
+          class="fixed z-40 h-full w-60 bg-[#45444E] text-white lg:hidden"
+        >
+          <div class="flex h-full flex-col justify-between">
+            <div>
+              <div class="m-4 flex justify-end text-lg">
+                <button onClick="toggleNav()">X</button>
+              </div>
+              <a
+                onClick="toggleNav()"
+                href="#about-section"
+                class="flex border-y border-gray-600 py-2 pl-4"
+                >About Me</a
+              >
+              <a
+                onClick="toggleNav()"
+                href="#core-values-section"
+                class="flex border-b border-gray-600 py-2 pl-4"
+                >Core Values</a
+              >
+              <a
+                onClick="toggleNav()"
+                href="#expertise-section"
+                class="flex border-b border-gray-600 py-2 pl-4"
+                >Expertise</a
+              >
+              <a
+                onClick="toggleNav()"
+                href="#skills-section"
+                class="flex border-b border-gray-600 py-2 pl-4"
+                >Tools & Technologies</a
+              >
+              <a
+                onClick="toggleNav()"
+                href="#porfolio-section"
+                class="flex border-b border-gray-600 py-2 pl-4"
+                >Portfolio</a
+              >
+            </div>
+            <div>
+              <p class="ml-2 pb-3 text-sm">Get free consultation</p>
+              <div class="flex items-center border-b border-gray-600 py-2 pl-4">
+                <img
+                  src="./public/assets/contact-options/linkedIn-icon.png"
+                  class="h-8 w-8"
+                />
+                <span class="ml-3">LinkedIn</span>
+              </div>
+              <div class="flex items-center border-b border-gray-600 py-2 pl-4">
+                <img
+                  src="./public/assets/contact-options/github-icon.png"
+                  class="h-8 w-8"
+                />
+                <span class="ml-3">Github</span>
+              </div>
+              <div class="flex items-center border-b border-gray-600 py-2 pl-4">
+                <img
+                  src="./public/assets/contact-options/upwork-icon.png"
+                  class="h-8 w-8"
+                />
+                <span class="ml-3">Upwork</span>
+              </div>
+              <div class="flex items-center border-b border-gray-600 py-2 pl-4">
+                <img
+                  src="./public/assets/contact-options/gmail-icon.png"
+                  class="h-8 w-8"
+                />
+                <span class="ml-3">Gmail</span>
+              </div>
+              <div class="mb-3 flex items-center border-b border-gray-600 py-2 pl-4">
+                <img
+                  src="./public/assets/contact-options/whatsapp-icon.png"
+                  class="h-8 w-8"
+                />
+                <span class="ml-3">WhatsApp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Side Bar Section End-->
+      <!--Mobile Hero Section Background Image Start-->
+      <img
+        class="absolute h-[540px] w-full max-w-none md:h-[425px] lg:hidden"
+        src="./public/assets/hero-section/mobile-hero.png"
+      />
+      <!--Mobile Hero Section Background Image End-->
+      <div class="mx-auto max-w-screen-2xl pt-11 lg:pt-0">
+        <div class="mx-auto w-11/12">
+          <!-- Hero Section Start-->
+
+          <div class="relative flex items-center">
+            <img
+              class="absolute hidden w-full max-w-none lg:block"
+              src="./public/assets/hero-section/hero- bg.png"
+            />
+
+            <div class="relative z-10 mr-12 hidden w-1/2 lg:block">
+              <img
+                class="mt-5 w-11/12"
+                src="./public/assets/hero-section/hamza-azam.png"
+                alt=""
+              />
+            </div>
+            <div class="relative z-10 lg:-ml-20 lg:w-1/2">
+              <h1
+                class="mt-10 text-[38px] font-bold leading-[48px] text-[#F5F5F5] lg:mt-0 lg:text-[54px] lg:leading-[69px]"
+              >
+                Discover my Amazing Work Space!
+              </h1>
+              <p class="my-[36px] text-lg text-[#F5F5F5] lg:text-[24px]">
+                <span class="text-[#5AA2C6]">&lt;code&gt;</span> I can turn your App idea
+                into reality with beautiful design
+                <span class="text-[#5AA2C6]">&lt;/code&gt;</span>
+              </p>
+              <div class="mt-32 flex lg:mt-0">
+                <img
+                  class="h-14 w-14 lg:h-auto lg:w-auto"
+                  src="./public/assets/hero-section/top-rated-icon.svg"
+                  alt=""
+                />
+                <div class="ml-7">
+                  <p class="w-48 text-xl text-[#F5F5F5] lg:w-auto lg:text-[28px]">
+                    Top Rated Upwork Freelancer
+                  </p>
+                  <p class="mt-2 hidden text-xl text-[#5AA2C6] lg:block lg:text-[24px]">
+                    Muhammad Hamza
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Section End-->
+          <!-- About Section Start-->
+          <div class="mt-24 md:mt-10 md:grid md:grid-cols-2 lg:mt-0 lg:block">
+            <!-- Mobile About Image Section Start-->
+            <div
+              class="mx-auto mt-10 w-11/12 overflow-hidden bg-[#44444E] md:w-[127%] lg:hidden"
+            >
+              <img
+                class="mb-[-120px] ml-[-12px] md:ml-[-75px]"
+                src="./public/assets/hero-section/hamza-azam.png"
+              />
+            </div>
+            <!--Mobile About Image Section End-->
+
+            <div
+              id="about-section"
+              class="mx-auto w-11/12 bg-[#2D2D37] px-5 py-7 md:mt-10 md:w-auto lg:mt-0 lg:w-auto lg:bg-transparent lg:px-0 lg:py-0"
+            >
+              <h1
+                class="text-[32px] font-bold text-[#F5F5F5] opacity-10 lg:text-center lg:text-[113px]"
+              >
+                About Me
+              </h1>
+              <h4
+                class="relative bottom-6 text-base font-medium text-[#5AA2C6] lg:bottom-[60px] lg:text-center lg:text-[54px]"
+              >
+                About Me
+              </h4>
+              <p
+                class="mt-[-10px] text-sm text-[#F5F5F5] opacity-80 lg:mt-[-10px] lg:text-center lg:text-[24px] lg:leading-7"
+              >
+                Flutter Developer with 3 years of experience. From Startups to Small
+                Businesses, I have worked with numerous organizations. In addition, I have
+                helped multiple startups build their Attractive and Bug-free
+                Cross-Platform (Android and iOS) Mobile Apps using Flutter.
+              </p>
+              <p
+                class="text-sm text-[#F5F5F5] opacity-80 lg:text-center lg:text-[24px] lg:leading-7"
+              >
+                I have worked on a variety of projects, both large and small, and have
+                gained a wealth of knowledge in the process. I am a quick learner and have
+                a keen eye for detail, which makes me an excellent developer. I am also a
+                great communicator, which is essential for working with clients. I am a
+                friendly and personable individual, and I am always happy to help out
+                wherever I can. If you are looking for a freelance Flutter developer, get
+                in touch. I am sure you won’t be disappointed.
+              </p>
+            </div>
+          </div>
+          <!-- About Section End-->
+          <!-- Core Values Section Start-->
+          <div class="mt-10 md:mt-20" id="core-values-section">
+            <h1
+              class="text-[32px] font-bold text-[#F5F5F5] opacity-10 lg:text-center lg:text-[113px]"
+            >
+              Core Values
+            </h1>
+            <h4
+              class="relative bottom-6 text-base text-[#5AA2C6] lg:left-3 lg:bottom-[60px] lg:text-center lg:text-[32px]"
+            >
+              Why should you choose me over other Flutter Developers?
+            </h4>
+            <div class="mt-[-20px] flex flex-wrap justify-center">
+              <div
+                class="backdrop-filter-[30px] mx-[16px] my-[19px] max-w-[600px] bg-[#45444E] px-5 pt-5 pb-4 lg:h-[315px] lg:w-[373px] lg:px-[40px] lg:pt-[40px] lg:pb-[20px]"
+              >
+                <div class="flex items-center lg:block">
+                  <img
+                    class="mx-auto hidden lg:block"
+                    src="./public/assets/core-values/value-my-clients.svg"
+                    alt=""
+                  />
+                  <img
+                    class="block lg:hidden"
+                    src="./public/assets/core-values/value-mobile.svg"
+                    alt=""
+                  />
+                  <h4
+                    class="my-3 ml-2 text-center text-lg text-white lg:text-[24px] lg:text-[#5AA2C6]"
+                  >
+                    Value my clients
+                  </h4>
+                </div>
+                <p class="text-[14px] text-[#EBEBEB] lg:text-center">
+                  Earning your trust and providing you with the best satisfaction is my
+                  goal. I always focus on providing the best quality work to my clients.
+                  My client reviews and feedback on my profile justify that I give the
+                  best quality work and earn their trust.
+                </p>
+              </div>
+              <div
+                class="backdrop-filter-[30px] mx-[16px] my-[19px] max-w-[600px] bg-[#45444E] px-5 pt-5 pb-4 lg:h-[315px] lg:w-[373px] lg:px-[40px] lg:pt-[40px] lg:pb-[20px]"
+              >
+                <div class="flex items-center lg:block">
+                  <img
+                    class="mx-auto hidden lg:block"
+                    src="./public/assets/core-values/promised.svg"
+                    alt=""
+                  />
+                  <img
+                    class="block lg:hidden"
+                    src="./public/assets/core-values/promise-mobile.svg"
+                    alt=""
+                  />
+
+                  <h4
+                    class="my-3 ml-2 text-lg text-white lg:text-center lg:text-[24px] lg:text-[#5AA2C6]"
+                  >
+                    Going more than I promised
+                  </h4>
+                </div>
+                <p class="text-[14px] text-[#EBEBEB] lg:text-center">
+                  I always choose my client over anything. So I can even go beyond my
+                  promise to provide the best thing.
+                </p>
+              </div>
+              <div
+                class="backdrop-filter-[30px] mx-[16px] my-[19px] max-w-[600px] bg-[#45444E] px-5 pt-5 pb-4 lg:h-[315px] lg:w-[373px] lg:px-[40px] lg:pt-[40px] lg:pb-[20px]"
+              >
+                <div class="flex items-center lg:block">
+                  <img
+                    class="mx-auto hidden lg:block"
+                    src="./public/assets/core-values/commuication.svg"
+                    alt=""
+                  />
+                  <img
+                    class="block lg:hidden"
+                    src="./public/assets/core-values/communication-mobile.svg"
+                    alt=""
+                  />
+
+                  <h4
+                    class="my-3 ml-2 text-center text-lg text-white lg:text-[24px] lg:text-[#5AA2C6]"
+                  >
+                    Communication
+                  </h4>
+                </div>
+                <p class="text-[14px] text-[#EBEBEB] lg:text-center">
+                  My clients always get timely replies from me. Communication is the core
+                  part of achieving something great.
+                </p>
+              </div>
+              <div
+                class="backdrop-filter-[30px] mx-[16px] my-[19px] max-w-[600px] bg-[#45444E] px-5 pt-5 pb-4 lg:h-[315px] lg:w-[373px] lg:px-[40px] lg:pt-[40px] lg:pb-[20px]"
+              >
+                <div class="flex items-center lg:block">
+                  <img
+                    class="mx-auto hidden lg:block"
+                    src="./public/assets/core-values/problem-solver.svg"
+                    alt=""
+                  />
+                  <img
+                    class="block lg:hidden"
+                    src="./public/assets/core-values/problem-solver-mobile.svg"
+                    alt=""
+                  />
+                  <h4
+                    class="my-3 ml-2 text-center text-lg text-white lg:text-[24px] lg:text-[#5AA2C6]"
+                  >
+                    Problem Solver
+                  </h4>
+                </div>
+                <p class="text-[14px] text-[#EBEBEB] lg:text-center">
+                  You will find a great problem solver inside me. I love to challenge
+                  myself to solve all types of development problems.
+                </p>
+              </div>
+              <div
+                class="backdrop-filter-[30px] mx-[16px] my-[19px] max-w-[600px] bg-[#45444E] px-5 pt-5 pb-4 lg:h-[315px] lg:w-[373px] lg:px-[40px] lg:pt-[40px] lg:pb-[20px]"
+              >
+                <div class="flex items-center lg:block">
+                  <img
+                    class="mx-auto hidden lg:block"
+                    src="./public/assets/core-values/long-term.svg"
+                    alt=""
+                  />
+                  <img
+                    class="block lg:hidden"
+                    src="./public/assets/core-values/long-term-mobile.svg"
+                    alt=""
+                  />
+
+                  <h4
+                    class="my-3 ml-2 text-lg text-white lg:text-center lg:text-[24px] lg:text-[#5AA2C6]"
+                  >
+                    Build long-term relations
+                  </h4>
+                </div>
+                <p class="text-[14px] text-[#EBEBEB] lg:text-center">
+                  I focus on building long-term relations with my clients. I always value
+                  them. And provide what they need.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Core Values Section End-->
+          <!-- Skills Section Start-->
+          <div
+            id="skills-section"
+            class="mx-auto mt-10 flex w-11/12 flex-wrap justify-center bg-[#2D2D37] py-7 md:mt-28 lg:justify-between lg:bg-transparent lg:py-0 lg:px-0"
+          >
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[90px] lg:w-[90px]"
+                src="./public/assets/skills/skill1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[99px] lg:w-[99px]"
+                src="./public/assets/skills/skill2.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[99px] lg:w-[90px]"
+                src="./public/assets/skills/skill3.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="relative right-[4px] max-w-[125%] lg:bottom-3 lg:h-[130px] lg:w-[140px]"
+                src="./public/assets/skills/skill4.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[110px] lg:w-[100px]"
+                src="./public/assets/skills/skill5.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[83px] lg:w-[89px]"
+                src="./public/assets/skills/skill6.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[76px] lg:w-[76px]"
+                src="./public/assets/skills/skill7.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="my-2 mx-3 h-14 w-14 rounded-2xl bg-[#54535D] p-3 lg:my-0 lg:mx-0 lg:h-auto lg:w-auto lg:bg-transparent"
+            >
+              <img
+                class="lg:h-[80px] lg:w-[80px]"
+                src="./public/assets/skills/skill8.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Skills Section End-->
+          <!-- Expertise Section Start-->
+          <div class="mt-10 md:mt-28" id="expertise-section">
+            <h1
+              class="text-[32px] font-bold text-[#F5F5F5] opacity-10 lg:text-center lg:text-[113px]"
+            >
+              Expertise
+            </h1>
+            <h4
+              class="relative bottom-6 text-base font-medium text-[#5AA2C6] lg:left-6 lg:bottom-[60px] lg:text-center lg:text-[54px]"
+            >
+              Expertise
+            </h4>
+            <div class="flex flex-wrap justify-center lg:mt-[-40px]">
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  Firebase
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  State Managment
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  Figma and Adobe XD to Flutter UI
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  API Integration
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  SQLite Database
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  Payment Gateway Integration
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 hidden w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:block lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  Google APIs
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[116px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  Custom and reusable widgets
+                </p>
+              </div>
+              <div
+                class="shadow-[0px 20px 60px #00000029] mx-[10px] my-2 w-[43%] max-w-[185px] bg-[#2D2D37] lg:my-[20px] lg:h-[148px] lg:w-[288px] lg:max-w-3xl lg:border lg:border-[#0B83B2] lg:bg-transparent"
+              >
+                <p
+                  class="flex h-full items-center p-[16px] text-sm text-[#F5F5F5] opacity-80 lg:justify-center lg:p-[20px] lg:text-center lg:text-[24px] lg:leading-8"
+                >
+                  App Submission to Google and Apple Store
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Expertise Section End-->
+        </div>
+        <!-- Portfolio Section Start-->
+        <div class="mt-10 md:mt-28" id="porfolio-section">
+          <div class="mx-auto w-11/12 lg:mx-0 lg:ml-[100px] lg:w-auto">
+            <h1
+              class="text-left text-[32px] font-bold text-[#F5F5F5] opacity-10 lg:text-[113px]"
+            >
+              Portfolio
+            </h1>
+            <h4
+              class="relative bottom-6 mr-1 text-left text-base font-medium text-[#5AA2C6] lg:bottom-[64px] lg:ml-1 lg:text-[54px]"
+            >
+              Portfolio
+            </h4>
+          </div>
+          <div class="md:grid md:grid-cols-2 lg:block">
+            <div
+              class="mx-auto grid w-11/12 md:mt-4 lg:mx-0 lg:mt-0 lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/inspiry.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/inspiry/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#F7BA34]">
+                    Inspiry Learning
+                  </p>
+                </div>
+              </a>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/inspiry/image.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/inspiry/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#F7BA34]">
+                  Inspiry Learning
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  Inspiry Learning is an affordable online homework service portal
+                  dedicated to delivering high-quality academic results.
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://apps.apple.com/pk/app/inspiry-learning/id1641576235"
+                    target="_blank"
+                    >https://apps.apple.com/pk/app/inspiry-learning/id1641576235</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li class="">Paypal Integration</li>
+                  <li>Chat Socket Integration</li>
+                  <li>API integration</li>
+                  <li>Push Notifications</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#3A3229] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/inspiry/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    Hamza was great to work with. He was very responsive and completed the
+                    work on time and as expected. The work he delivered was of high
+                    quality, and he was able to complete the project within the specified
+                    budget. Overall, it was a great experience working with Hamza, and I
+                    would recommend him to others.
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/inspiry/client.png"
+                      alt=""
+                    /><span class="ml-2 text-[14px] text-[#F5F5F5]">Marley</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mx-auto ml-auto mt-4 grid w-11/12 lg:mx-0 lg:mt-20 lg:ml-auto lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/place2tour.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/place2tour/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#0FB1E1]">Place2Tour.</p>
+                </div>
+              </a>
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/place2tour/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#0FB1E1]">
+                  Place2Tour.
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  A cross Platform app for tour guides to add information about places
+                  tourists would love to visit. The app is available on iOS and Android
+                  making it accessible to many users. The app allows users to add photos,
+                  descriptions, and GPS coordinates for each location.
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-1 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://apps.apple.com/pk/app/place2tour/id1608890719"
+                    target="_blank"
+                    >https://apps.apple.com/pk/app/place2tour/id1608890719</a
+                  >
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Google Play Store:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://play.google.com/store/apps/details?id=com.interuse.place2tour"
+                    target="_blank"
+                    >https://play.google.com/store/apps/details?id=com.interuse.place2tour</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li>Multi-language Support ( RTL and LTR, English and Hebrew)</li>
+                  <li>User authentication using Firebase</li>
+                  <li>Push Notifications Using Firebase Cloud Messaging</li>
+                  <li>Firebase Firestore</li>
+                  <li>Location Fetching</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#303F4A] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/place2tour/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    Hamza and his team performed very well. They delivered our application
+                    on time and within budget. They were a pleasure to work with. Very
+                    professional and detailed. Happy to recommend them
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/place2tour/client.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="ml-2 text-[14px] text-[#F5F5F5]">Amir Shaked</p>
+                      <p class="ml-2 text-[12px] text-[#D4CCCC]">CEO at Interuse LTD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/place2tour/image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mx-auto mt-4 grid w-11/12 lg:mx-0 lg:mt-20 lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/jakstat.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/jakstat/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#56B5A5]">
+                    Jakstat Courier
+                  </p>
+                </div>
+              </a>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/jakstat/image.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/jakstat/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#56B5A5]">
+                  Jakstat Courier
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  On-demand delivery app servicing all 50 states in the United States.
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://apps.apple.com/pk/app/jakstat-courier/id1545021259"
+                    target="_blank"
+                    >https://apps.apple.com/pk/app/jakstat-courier/id1545021259</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li>Social Sign-in (Google & Apple)</li>
+                  <li>Chat Socket Integration</li>
+                  <li>Google Maps</li>
+                  <li>Stripe Payments</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#2C4548] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/jakstat/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    I had a great experience working with Hamza. He was very responsive
+                    and easy to communicate with. The project was completed on time and to
+                    a high standard. I would definitely recommend them and would use them
+                    again for future projects.
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/jakstat/client.png"
+                      alt=""
+                    /><span class="ml-2 text-[14px] text-[#F5F5F5]">Zach Pira</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mx-auto ml-auto mt-4 grid w-11/12 lg:mx-0 lg:mt-20 lg:ml-auto lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/משגיחי ומפקחי כשרות ikr.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/משגיחי ומפקחי כשרות ikr/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#1A89EA]">
+                    משגיחי ומפקחי כשרות ikr
+                  </p>
+                </div>
+              </a>
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/משגיחי ומפקחי כשרות ikr/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#1A89EA]">
+                  משגיחי ומפקחי כשרות ikr
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  The app was to implement the inspection process of Products under the
+                  kosher reform.
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-1 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="#"
+                    >(In Review)</a
+                  >
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Google Play Store:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://play.google.com/store/apps/details?id=com.kosharot.ikr"
+                    target="_blank"
+                    >https://play.google.com/store/apps/details?id=com.kosharot.ikr</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li>RTL Support (Hebrew)</li>
+                  <li>API integration</li>
+                  <li>Firebase Realtime Database</li>
+                  <li>Background Location Fetching</li>
+                  <li>Push Notifications</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#34465B] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/משגיחי ומפקחי כשרות ikr/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    If you're looking for a great developer to work with, you can't go
+                    wrong with Hamza. I've worked with them on several projects, and he
+                    has always been professional and delivered high-quality work. He
+                    communicates well and is always responsive, which is essential when
+                    working with freelancers. He also provides excellent value for the
+                    price. I would recommend Hamza to anyone looking for a great developer
+                    to work with.
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/משגיחי ומפקחי כשרות ikr/client.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="ml-2 text-[14px] text-[#F5F5F5]">Amir Shaked</p>
+                      <p class="ml-2 text-[12px] text-[#D4CCCC]">CEO at Interuse LTD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/משגיחי ומפקחי כשרות ikr/image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mx-auto mt-4 grid w-11/12 lg:mx-0 lg:mt-20 lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/cazyu.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/cazyu/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#5AA2C6]">
+                    Cayzu Help Desk
+                  </p>
+                </div>
+              </a>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/cazyu/image.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/cazyu/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#5AA2C6]">
+                  Cayzu Help Desk
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  Cayzu is a cloud-based help desk software solution designed to manage
+                  customer service for small and medium-sized businesses. Cayzu features
+                  include ticket management, Facebook & Twitter integration, mobile apps,
+                  real-time reporting, instant notifications, managing multiple brands
+                  from a single portal, and more
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-1 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://apps.apple.com/pk/app/cayzu-help-desk/id959506507"
+                    target="_blank"
+                    >https://apps.apple.com/pk/app/cayzu-help-desk/id959506507</a
+                  >
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Google Playstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://play.google.com/store/apps/details?id=com.support.cayzu_mobile.agent"
+                    target="_blank"
+                    >https://play.google.com/store/apps/details?id=com.support.cayzu_mobile.agent</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li>Rebuilt the native android and iOS app in Flutter</li>
+                  <li>API Integration</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#364450] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/cazyu/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    Hamza and his team have been so great to work with. I have no issue
+                    working with him. His team is always available, very enthusiastic,
+                    does a great job, and completes on time! I gave him new work that he
+                    needed to gain experience in, but they still managed to do a fantastic
+                    job doing research and completing it on time
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/cazyu/client.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="ml-2 text-[14px] text-[#F5F5F5]">Ben Puzzo</p>
+                      <p class="ml-2 text-[12px] text-[#D4CCCC]">Founder, Coyzu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mx-auto ml-auto mt-4 grid w-11/12 lg:mx-0 lg:mt-20 lg:ml-auto lg:grid-cols-2 lg:gap-10"
+            >
+              <a class="lg:hidden" href="./src/munitec.html">
+                <div>
+                  <img
+                    class="h-full w-full object-fill"
+                    src="./public/assets/porfolios/munitec/image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="block bg-[#2D2D37] lg:hidden">
+                  <p class="py-4 pl-6 text-lg font-medium text-[#BCC4F4]">
+                    Munitec Online
+                  </p>
+                </div>
+              </a>
+              <div class="relative hidden lg:block">
+                <img
+                  class="absolute -top-16 -left-[85px] h-[250px] w-[250px]"
+                  src="./public/assets/porfolios/munitec/logo.png"
+                  alt=""
+                />
+                <h2 class="mt-[90px] mb-2 text-[24px] font-bold text-[#BCC4F4]">
+                  Munitec Online
+                </h2>
+                <p class="mb-2 text-[18px] text-[#F5F5F5]">
+                  The app is intended for authorities and regional councils to manage the
+                  schools' transportation system. It allows parents to track the location
+                  of their children on the transportation and provide parents with peace
+                  of mind.
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Technology Stack:
+                  <span class="ml-1 text-[16px] text-[#F5F5F5]">Flutter</span>
+                </p>
+                <p class="mb-1 text-[18px] text-[#ACACAC]">
+                  Apple Appstore:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://apps.apple.com/us/app/munitec-online/id1621265392"
+                    target="_blank"
+                    >https://apps.apple.com/us/app/munitec-online/id1621265392</a
+                  >
+                </p>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">
+                  Google Play Store:<a
+                    style="text-decoration: underline"
+                    class="ml-1 text-[14px] text-[#F5F5F5]"
+                    href="https://play.google.com/store/apps/details?id=com.interuse.niture"
+                    target="_blank"
+                    >https://play.google.com/store/apps/details?id=com.interuse.niture</a
+                  >
+                </p>
+                <p class="mb-[1px] text-[18px] text-[#ACACAC]">Features:</p>
+                <ul
+                  class="mb-2 list-inside list-disc text-[16px] text-[#F5F5F5] marker:text-2xl marker:text-[#5AA2C6]"
+                >
+                  <li>RTL Support (Hebrew)</li>
+                  <li>Firebase Authentication anonymous sign-in</li>
+                  <li>API integration</li>
+                  <li>Firebase Realtime Database</li>
+                  <li>Background Location Fetching</li>
+                  <li>Push Notifications</li>
+                </ul>
+                <p class="mb-2 text-[18px] text-[#ACACAC]">Client Review:</p>
+                <div class="bg-opacity-2 relative rounded-md bg-[#4B4E5E] p-6 pb-4">
+                  <img
+                    class="absolute -top-1"
+                    src="./public/assets/porfolios/munitec/quote-icon.svg"
+                    alt=""
+                  />
+                  <p class="my-2 text-[14px] text-[#F5F5F5]">
+                    Hamza did an excellent job. Meetings were professional & respectful;
+                    scoping & estimates were appropriate; pricing was very fair; delivery
+                    was on time; the first review of quality showed thorough preparations;
+                    final wrap-up was spot on; very accessible. We will be hiring them
+                    again soon for the next phase
+                  </p>
+                  <div class="mt-4 flex items-center">
+                    <img
+                      class="h-[39px] w-[39px]"
+                      src="./public/assets/porfolios/munitec/client.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="ml-2 text-[14px] text-[#F5F5F5]">Amir Shaked</p>
+                      <p class="ml-2 text-[12px] text-[#D4CCCC]">CEO at Interuse LTD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block">
+                <img
+                  class="h-full w-full object-fill"
+                  src="./public/assets/porfolios/munitec/image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Section End-->
+
+        <!-- Contact Section Start-->
+        <div class="mx-auto mt-10 w-11/12 pb-8 md:mt-28">
+          <div class="flex justify-center">
+            <img
+              class="mx-[10px] h-10 w-10 lg:h-16 lg:w-16"
+              src="./public/assets/contact-options/upwork-icon.png"
+              alt=""
+            />
+            <img
+              class="mx-[10px] h-10 w-10 lg:h-16 lg:w-16"
+              src="./public/assets/contact-options/github-icon.png"
+              alt=""
+            />
+            <img
+              class="mx-[10px] h-10 w-10 lg:h-16 lg:w-16"
+              src="./public/assets/contact-options/linkedIn-icon.png"
+              alt=""
+            />
+            <img
+              class="mx-[10px] h-10 w-10 lg:h-16 lg:w-16"
+              src="./public/assets/contact-options/whatsapp-icon.png"
+              alt=""
+            />
+            <img
+              class="mx-[10px] h-10 w-10 lg:h-16 lg:w-16"
+              src="./public/assets/contact-options/gmail-icon.png"
+              alt=""
+            />
+          </div>
+          <p class="mt-7 text-center text-[16px] text-[#F5F5F5]">
+            Contact now to get free consultation
+          </p>
+        </div>
+        <!-- Contact Section End-->
+      </div>
+    </div>
+  </body>
+</html>
